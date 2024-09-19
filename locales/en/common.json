@@ -1,0 +1,23 @@
+{
+  "title": "Title",
+  "banner": {
+    "viewDetail": "Game Details"
+  },
+  "menu": {
+    "home": "Home",
+    "games": "Games",
+    "news": "News",
+    "match": "Match",
+    "company": "Company",
+    "events": "Events",
+    "partners": "Partners"
+  },
+  "footer": {
+    "address": "Valletta Buildings, South Street,\nValletta - VLT 1103 Malta",
+    "webMap": "WEB MAP",
+    "aboutUs": "About Us",
+    "event": "Events",
+    "partners": "Our Partners",
+    "copyRight": "COPYRIGHT © 2015-2024 ALL RIGHTS RESERVED."
+  }
+}

@@ -1,0 +1,145 @@
+.home_page {
+  width: 100%;
+  padding: 99px 16px 60px;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  @screen md {
+    padding: 30px 16px 20px;
+  }
+
+  @screen sm {
+    padding: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 40px;
+
+    @screen sm {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__main_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+
+    @screen sm {
+      gap: 47px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__hot_game {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+
+    @screen md {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    @screen sm {
+      padding: 0 15px;
+    }
+
+    &--filter {
+      width: 146px;
+      border-radius: 2px;
+      font-weight: bold;
+
+      &:global(.ant-select) {
+        .ant-select-selector {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  &__hottest_category {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+
+    @screen md {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    @screen sm {
+      margin: 0 -25px;
+    }
+
+    &--box-text {
+      padding: 20px;
+      height: 210px;
+      border-radius: 20px;
+      color: theme("colors.white");
+
+      @screen sm {
+        padding: 16px;
+        height: 167px;
+      }
+    }
+
+    &--title {
+      margin-top: 15px;
+      color: theme("colors.white");
+      font-size: 22px;
+      line-height: 16px;
+
+      @screen sm {
+        font-size: 17px;
+        line-height: 12px;
+      }
+    }
+
+    &--des {
+      margin-top: 18px;
+      font-size: 14px;
+      color: theme("colors.white" / 60%);
+
+      @screen sm {
+        margin-top: 14px;
+        font-size: 11px;
+        line-height: 16px;
+      }
+    }
+
+    &__box-content {
+      border-radius: 28px;
+      padding: 20px;
+      background-color: theme("colors.gray-9");
+      display: flex !important;
+      gap: 30px;
+
+      & > div {
+        width: 50%;
+      }
+
+      @screen sm {
+        padding: 16px;
+        gap: 24px;
+      }
+    }
+
+    &__load_more {
+      display: none;
+
+      @screen sm {
+        display: inline-flex;
+        margin-top: 44px;
+        width: 100%;
+      }
+
+      &:global(.ant-btn.ant-btn-default) {
+        border-radius: 14px;
+        border-color: theme("colors.gray-12");
+        background-color: theme("colors.gray-12");
+      }
+    }
+  }
+}

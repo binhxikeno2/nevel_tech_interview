@@ -1,0 +1,30 @@
+@import "config/reset";
+@import "config/tailwind";
+
+@font-face {
+  font-family: "PingFang SC";
+  font-weight: 400;
+  font-style: normal;
+  src: url("fonts/pingFangSc/PingFang-SC-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PingFang SC";
+  font-weight: 300;
+  font-style: normal;
+  src: url("fonts/pingFangSc/PingFang-SC-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PingFang SC";
+  font-weight: 700;
+  font-style: normal;
+  src: url("fonts/pingFangSc/PingFang-SC-Bold.ttf") format("truetype");
+}
+
+@layer base {
+  * {
+    font-family: "PingFang SC";
+    scroll-behavior: smooth;
+  }
+}

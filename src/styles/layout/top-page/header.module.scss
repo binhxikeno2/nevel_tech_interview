@@ -1,0 +1,115 @@
+.header_top_page {
+  width: 100%;
+  padding: 0 17px;
+  background: #00000099;
+  z-index: 1;
+
+  @screen sm {
+    padding: 14px 17px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  &__inner {
+    max-width: theme("maxWidth.xl");
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__menu-sp {
+      position: fixed;
+      inset: 0;
+      left: 20%;
+      background-color: theme("colors.black-1" / 60%);
+      z-index: 999;
+    }
+  }
+
+  &__nav {
+    $self_menu: &;
+
+    display: flex;
+    gap: 42px;
+
+    @screen md {
+      gap: 28px;
+    }
+
+    @screen sm {
+      display: none;
+    }
+
+    & > li {
+      cursor: pointer;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 3px;
+        width: 0;
+        transition: all 0.4s;
+      }
+
+      &:hover {
+        #{$self_menu}__item {
+          color: theme("colors.white");
+        }
+
+        &::before {
+          width: 100%;
+          background: theme("colors.white");
+        }
+      }
+    }
+
+    &__item {
+      color: theme("colors.white" / 50%);
+      text-transform: uppercase;
+    }
+  }
+
+  &__menu_sp {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-color: theme("colors.black"/ 70%);
+    display: flex;
+  }
+
+  &__nav-sp {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &--item {
+      padding: 16px 24px;
+      position: relative;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        left: 0;
+        width: 0;
+        transition: all 0.4s;
+      }
+
+      &:hover {
+        &::before {
+          width: 100%;
+          background-color: theme("colors.white");
+        }
+      }
+    }
+
+    &--title {
+      color: theme("colors.white");
+    }
+  }
+}

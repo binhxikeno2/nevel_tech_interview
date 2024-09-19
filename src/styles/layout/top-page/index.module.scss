@@ -1,0 +1,53 @@
+.top_page_layout {
+  &__slider {
+    :global(.slick-dots) {
+      bottom: 38px;
+      left: -20%;
+
+      @screen sm {
+        left: 0;
+        bottom: 30%;
+      }
+
+      button {
+        &::before {
+          font-size: 10px;
+          left: -1px;
+          color: theme("colors.white") !important;
+        }
+      }
+
+      :global(.slick-active) {
+        border: 1px solid theme("colors.white");
+        border-radius: 50%;
+      }
+    }
+
+    &--sp {
+      display: none;
+      position: absolute;
+      bottom: 28px;
+      left: 50%;
+      transform: translate(-50%);
+      text-align: center;
+
+      @screen sm {
+        display: block;
+      }
+    }
+
+    &--title {
+      color: theme("colors.white");
+      font-size: 24px;
+      line-height: 27px;
+    }
+
+    &--view_detail {
+      color: theme("colors.white");
+
+      &:hover {
+        color: theme("colors.white" / 70%) !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@import "../common/function";
+
+:global(.ant-btn-default.ant-btn) {
+  &.button-app {
+    border-radius: 3px;
+
+    &__type {
+      &__contained {
+        background: theme("colors.primary");
+        color: theme("colors.white");
+
+        &:hover {
+          color: theme("colors.white");
+          background: theme("colors.primary" / 75%);
+        }
+      }
+
+      &__outlined {
+        color: theme("colors.dark");
+        background: theme("colors.white");
+        border-color: theme("colors.gray-8");
+        font-weight: 600;
+
+        &:hover {
+          color: theme("colors.dark");
+          border-color: theme("colors.dark");
+        }
+      }
+
+      &__danger {
+        background: theme("colors.danger");
+        color: theme("colors.white");
+
+        &:hover {
+          color: theme("colors.white");
+          background: theme("colors.danger" / 75%);
+        }
+      }
+
+      &__info {
+        background: theme("colors.third");
+        color: theme("colors.white");
+
+        &:hover {
+          color: theme("colors.white");
+          background: theme("colors.third" / 75%);
+        }
+      }
+
+      &__success {
+        background: theme("colors.success");
+        color: theme("colors.white");
+
+        &:hover {
+          color: theme("colors.white");
+          background: theme("colors.success" / 75%);
+        }
+      }
+
+      &__text {
+        background: transparent;
+        border: none;
+        padding: 0;
+
+        &:hover {
+          color: initial;
+        }
+      }
+    }
+
+    &__size {
+      &__large {
+        height: calc-rem(50);
+      }
+
+      &__middle {
+        height: calc-rem(40);
+      }
+
+      &__small {
+        height: calc-rem(28);
+      }
+    }
+  }
+}

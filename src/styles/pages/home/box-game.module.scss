@@ -1,0 +1,73 @@
+.box_game {
+  @screen sm {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: theme("colors.yellow-1");
+  }
+
+  &--title {
+    font-size: 19px;
+    line-height: 23px;
+    font-weight: 600;
+
+    @screen sm {
+      font-size: 16px;
+      line-height: 20px;
+      color: theme("colors.white");
+    }
+  }
+
+  &--preview {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 18px;
+    white-space: pre-line;
+
+    @apply line-clamp-2;
+
+    @screen sm {
+      margin-top: 4px;
+      font-size: 12px;
+      line-height: 16px;
+      color: theme("colors.white"/ 60%);
+    }
+  }
+
+  &--image {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  &__content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+
+    @screen sm {
+      margin-top: 0;
+      padding: 20px;
+      flex-direction: column;
+      gap: 28px;
+    }
+  }
+
+  &__content-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__point_sp {
+    display: none;
+
+    @screen sm {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+  }
+}

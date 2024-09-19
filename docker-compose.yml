@@ -1,0 +1,6 @@
+version: '3.8'
+services:
+  app:
+    image: binhxikeno2/interview_nevel_tech:lastest
+    ports:
+      - '30004:3000'

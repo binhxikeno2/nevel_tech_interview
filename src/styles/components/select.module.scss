@@ -1,0 +1,17 @@
+.select-app {
+  width: 100%;
+
+  &:global(.ant-select) {
+  }
+
+  :global(.ant-select-selector) {
+    &:focus-within {
+      box-shadow: none !important;
+      border-color: theme("colors.gray-5") !important;
+    }
+  }
+
+  &:global(.ant-select-sm) {
+    height: 28px;
+  }
+}

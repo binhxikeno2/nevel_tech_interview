@@ -1,0 +1,58 @@
+@import "../common/function";
+
+.typography-root {
+  font-family: "PingFang SC" !important;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+
+  &__size {
+    :global(.ant-typography) {
+      line-height: 1.6;
+    }
+
+    &__extra-large {
+      font-size: calc-rem(40);
+    }
+
+    &__large {
+      font-size: calc-rem(28);
+      line-height: 30px;
+    }
+
+    &__medium {
+      font-size: calc-rem(14.75);
+      line-height: 90px;
+      letter-spacing: 0.5px;
+    }
+
+    &__normal {
+      font-size: calc-rem(16);
+      line-height: 20px;
+    }
+
+    &__body {
+      font-size: calc-rem(14);
+      line-height: 14px;
+    }
+
+    &__caption {
+      font-size: calc-rem(12);
+      line-height: 16px;
+    }
+
+    &__small {
+      font-size: calc-rem(10);
+    }
+
+    &__minion {
+      font-size: calc-rem(8);
+    }
+  }
+}

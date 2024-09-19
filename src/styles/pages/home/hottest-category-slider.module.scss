@@ -1,0 +1,20 @@
+.hottest_category_slider {
+  width: 100%;
+
+  :global(.slick-dots) {
+    bottom: -30px;
+
+    button {
+      &::before {
+        font-size: 12px;
+        left: -1px;
+        color: theme("colors.gray-11") !important;
+      }
+    }
+
+    :global(.slick-active) {
+      border: 1px solid theme("colors.gray-11");
+      border-radius: 50%;
+    }
+  }
+}

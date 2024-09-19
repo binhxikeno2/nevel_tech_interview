@@ -1,0 +1,43 @@
+.collection_section {
+  @screen sm {
+    padding: 0 25px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__main_content {
+    margin-top: 25px;
+
+    @screen sm {
+      margin-top: 30px;
+    }
+  }
+
+  &--title {
+    font-weight: 600;
+    color: theme("colors.black");
+
+    @screen md {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  &--load_more {
+    & button {
+      padding: 8px 11px !important;
+      box-shadow: none;
+      color: theme("colors.gray-7");
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: theme("colors.black");
+      }
+    }
+  }
+}
