@@ -10,7 +10,8 @@
     "lint": "next lint --fix .",
     "lint:css": "stylelint --fix **/*.{css,scss,sass} --ignore-path .gitignore --ignore-path --config-basedir ./src/styles/",
     "lint:staged": "lint-staged",
-    "prettier": "prettier --write \"src/**/(*.tsx|*.ts|*.css|*.scss)\""
+    "prettier": "prettier --write \"src/**/(*.tsx|*.ts|*.css|*.scss)\"",
+    "prepare": "husky"
   },
   "dependencies": {
     "@ant-design/icons": "4.0.0",

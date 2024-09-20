@@ -1,5 +1,7 @@
 .top_page_layout {
   &__slider {
+    width: 100%;
+
     :global(.slick-dots) {
       bottom: 38px;
       left: -20%;

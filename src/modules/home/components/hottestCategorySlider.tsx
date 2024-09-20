@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { PropsWithChildren } from 'react';
 import Slider from 'react-slick';
 
@@ -17,7 +18,7 @@ export const HottestCategorySlider = ({ children }: PropsWithChildren) => {
     };
 
     return (
-      <div className={style['hottest_category_slider']}>
+      <div className={clsx(style['hottest_category_slider'], 'w-full overflow-hidden sm:pb-10')}>
         <Slider {...settingSlider}>{children}</Slider>
       </div>
     );
